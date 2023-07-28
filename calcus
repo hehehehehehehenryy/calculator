@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.calculadora {
+    position: relative;
+    display: grid;
+}
+
+.valor {
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 1.5em;   
+}
+span {
+    display: grid;
+    width: 60px;
+    height: 60px;
+    color: aliceblue;
+    background-color: blueviolet;
+    place-items: center;
+    border: 1px solid black;
+}
+span:active {
+    background: lightsalmon;
+    color: black;
+}
+span.apagar {
+    grid-column: span 2;
+    width: 120px;
+    background: dodgerblue;
+}
+span.soma {
+    grid-row: span 2;
+    height: 120px;
+}
+span.igual {
+    background-color: dodgerblue;
+}
